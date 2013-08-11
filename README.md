@@ -17,7 +17,7 @@ No "thanks" request, only want to know how many time my code are used.
 
 <b>Step 1</b>: Modify the Time Zone Setting String Before Using
 
-<b>Step 2</b>: Put the File in the application/models folder , set correct permissions
+<b>Step 2</b>: Put the "DHTpr.php" File in the application/models folder (in Zend) , set correct permissions
 
 <b>Step 3</b>: Done,Enjoy!!
 
