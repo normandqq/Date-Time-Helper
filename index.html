@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Date-time-helper : Date Time Helper as a Zend Model" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Date-time-helper</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/normandqq/Date-Time-Helper">View on GitHub</a>
+
+          <h1 id="project_title">Date-time-helper</h1>
+          <h2 id="project_tagline">Date Time Helper as a Zend Model</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/normandqq/Date-Time-Helper/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/normandqq/Date-Time-Helper/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="date-time-helper" class="anchor" href="#date-time-helper"><span class="octicon octicon-link"></span></a>Date-Time-Helper</h1>
+
+<h2>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why</h2>
+
+<p><b>I am a lazy Coder</b></p>
+
+<p>When I work ,I need to deal a lot issue with date and time , and I can not remember the PHP Stand Date Time Class functions
+Those functions have to many parameters to remember, so I wrote my own, now it is here</p>
+
+<p>Simple Example</p>
+
+<p><b>Question</b>: I want to get the Date of Yesterday </p>
+
+<p>Answer for PHP : </p>
+
+<p><code>
+  date_default_timezone_set('Australia/Melbourne');<br>
+  $dateYest = date("Y-m-d",strtotime('yesterday'));
+</code></p>
+
+<p>Answer for My Date Time Helper : </p>
+
+<p><code>
+$dateYest = Model_DTHpr::dateYesterday();
+</code></p>
+
+<p>Don't tel me you did not see the difference.
+Please check my Wiki for Full Examples</p>
+
+<h2>
+<a name="what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What</h2>
+
+<p>This tiny Class is combine of functions that you may need in "Real Work".
+It contains some functions that you may need to write them "again and again" in your code.
+Check the Function list see if you need it or not.</p>
+
+<h2>
+<a name="liciences" class="anchor" href="#liciences"><span class="octicon octicon-link"></span></a>Liciences</h2> 
+
+<p>Use and modify as your wish, comment and criticism is welcome.
+Let me know you have use it in your whatever "project", that is only thing I request.
+No "thanks" request, <b>only want to know how many time my code are used.</b></p>
+
+<h2>
+<a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>How-To</h2>
+
+<p><b>Step 1</b>: Modify the Time Zone Setting String Before Using</p>
+
+<p><b>Step 2</b>: Put the "DHTpr.php" File in the application/models folder (in Zend) , set correct permissions</p>
+
+<p><b>Step 3</b>: Done,Enjoy!!</p>
+
+<h2>
+<a name="function-list" class="anchor" href="#function-list"><span class="octicon octicon-link"></span></a>Function List</h2>
+
+<p>Model_DTHpr::dateToday()</p>
+
+<p>dateToday :  Return Today's Date in "yyyy-mm-dd" Format</p>
+
+<p>Model_DTHpr::dayToday()</p>
+
+<p>dayToday : Return Today's Day of the Week From 1(Monday) to 7(Sunday)   </p>
+
+<p>Model_DTHpr::dayLeft()</p>
+
+<p>dayLeft :  Return How Many Days Left To Next Week Monday</p>
+
+<p>Model_DTHpr::timeNow()</p>
+
+<p>timeNow :  Return Current Time</p>
+
+<p>Model_DTHpr::dateYesterday()</p>
+
+<p>dateYesterday : Return Date of Yesterday</p>
+
+<p>Model_DTHpr::getThisWeekMonday()</p>
+
+<p>getThisWeekMonday : Return Date of This Week Monday </p>
+
+<p>Model_DTHpr::getThisWeekSunday()</p>
+
+<p>getThisWeekSunday : Return Date of This Week Sunday</p>
+
+<p>Model_DTHpr::getLastWeekMonday()</p>
+
+<p>getLastWeekMonday : Return Date of Last Week Monday</p>
+
+<p>Model_DTHpr::getLastWeekSunday()</p>
+
+<p>getLastWeekSunday : Return Date of Last Week Sunday</p>
+
+<p>Model_DTHpr::adjustDays()</p>
+
+<p>adjustDays : Return "What Is The Date after 20 or 45 or X Days ?"</p>
+
+<p>Model_DTHpr::adjustWeeks()</p>
+
+<p>adjustWeeks : Return "What Is The Date after 3 or Y Weeks ?"</p>
+
+<p>Model_DTHpr::adjustMonths()</p>
+
+<p>adjustMonths : Return "What Is The Date after 3 months" (I know this is stupid function,but you got to have it!! -- IN REAL WORLD)</p>
+
+<p>Model_DTHpr::adjustYears()</p>
+
+<p>adjustYears : Return "What Is The Date after 100 Years" (Same as above)</p>
+
+<p>Model_DTHpr::createDateArray()</p>
+
+<p>createDateArray : Create an array of Date from DateBegin To DateEnd like array("2013-08-11","2013-08-12","2013-08-13")</p>
+
+<p>You will really need it when you looping</p>
+
+<p>Model_DTHpr::transferToInt()</p>
+
+<p>transferToInt : Transfer Date from "yyyy-mm-dd" Format to Int Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</p>
+
+<p>Model_DTHpr::getMondayByDate()</p>
+
+<p>getMondayByDate : Given a Date , Return Date Of Monday For That Week </p>
+
+<p>Model_DTHpr::getFirstDayOfTheMonth()</p>
+
+<p>getFirstDayOfTheMonth : Given a Date , Return First Day For That Month</p>
+
+<p>Model_DTHpr::getLastDayOfTheMonth()</p>
+
+<p>getLastDayOfTheMonth : Given a Date , Return Last Day For That Month (28,30,31 make a choice)</p>
+
+<p>Model_DTHpr::timeZoneSet()</p>
+
+<p>timeZoneSet : Inline Function to Replace date_default_timezone_set()</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Date-time-helper maintained by <a href="https://github.com/normandqq">normandqq</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
