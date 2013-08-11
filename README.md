@@ -19,4 +19,27 @@ Step 1: Modify the Time Zone Setting String Before Using
 Step 2: Put the File in the application/models folder , set correct permissions
 Step 3: Done,Enjoy!!
 
+Function List 
+
+Model_DTHpr::dateToday()
+Model_DTHpr::dayToday()
+Model_DTHpr::dayLeft()
+Model_DTHpr::timeNow()
+Model_DTHpr::dateYesterday()
+Model_DTHpr::getThisWeekMonday()
+Model_DTHpr::getThisWeekSunday()
+Model_DTHpr::getLastWeekMonday()
+Model_DTHpr::getLastWeekSunday()
+Model_DTHpr::adjustDays()
+Model_DTHpr::adjustWeeks()
+Model_DTHpr::adjustMonths()
+Model_DTHpr::adjustYears()
+Model_DTHpr::crateDateArray()
+Model_DTHpr::transferToInt()
+Model_DTHpr::getMondayByDate()
+Model_DTHpr::getFirstDayOfTheMonth()
+Model_DTHpr::getLastDayOfTheMonth()
+Model_DTHpr::timeZoneSet()
+
+
 
