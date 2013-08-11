@@ -27,11 +27,19 @@ No "thanks" request, only want to know how many time my code are used.
 
 Model_DTHpr::dateToday()
 
+  Return Today's Date in "yyyy-mm-dd" Format
+
 Model_DTHpr::dayToday()
+
+  Return Today's Day of the Week From 1(Monday) to 7(Sunday)   
 
 Model_DTHpr::dayLeft()
 
+  Return How Many Days Left To Next Week Monday
+
 Model_DTHpr::timeNow()
+
+  Return
 
 Model_DTHpr::dateYesterday()
 
