@@ -1,5 +1,33 @@
 Date-Time-Helper
 ================
+<h2>Why</h2>
+
+<b>I am a lazy Coder</b>
+
+When I work ,I need to deal a lot issue with date and time , and I can not remember the PHP Stand Date Time Class functions
+Those functions have to many parameters to remember, so I wrote my own, now it is here
+
+Simple Example
+
+<b>Question</b>: I want to get the Date of Yesterday 
+
+Answer for PHP : 
+
+<code>
+  date_default_timezone_set('Australia/Melbourne');<br />
+  $dateYest = date("Y-m-d",strtotime('yesterday'));
+</code>
+
+Answer for My Date Time Helper : 
+
+<code>
+$dateYest = Model_DTHpr::dateYesterday();
+</code>
+
+
+Don't tel me you did not see the difference.
+Please check my Wiki for Full Examples
+
 
 <h2>What</h2>
 
@@ -11,7 +39,7 @@ Check the Function list see if you need it or not.
 
 Use and modify as your wish, comment and criticism is welcome.
 Let me know you have use it in your whatever "project", that is only thing I request.
-No "thanks" request, only want to know how many time my code are used.
+No "thanks" request, <b>only want to know how many time my code are used.</b>
 
 <h2>How-To</h2>
 
