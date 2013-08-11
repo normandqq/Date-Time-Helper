@@ -276,7 +276,7 @@ class Model_DTHpr {
 	 * @param unknown_type $date
 	 * @return string
 	 */
-	public static function tranferToInt($date,$strTz = null){
+	public static function transferToInt($date,$strTz = null){
 		self::timeZoneSet($strTz);
 		return date("U",strtotime($date));	
 	}
@@ -325,9 +325,8 @@ class Model_DTHpr {
 	public static function getLastDayOfTheMonth($date,$cotr = "-",$strTz = null){
 		
 		self::timeZoneSet($strTz);
-		$firstDayOfNextMonth = self::getFirstDayOfTheMonth($date,$cotr);
-		$firstDayOfNextMonth = self::adjustMonths("add",$firstDayOfNextMonth,1);
-		return self::adjustDays("sub", $firstDayOfNextMonth,1,$cotr);
+		$dateString = "Y" . $cotr . "m" . $cotr . "t";
+		return date($dateString,strtotime($date));
 	
 	}
 	/**
